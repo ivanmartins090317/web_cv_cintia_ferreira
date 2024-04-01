@@ -1,0 +1,8 @@
+/* Fontes */
+@font-face {
+  font-family: '';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('') format('woff');
+}
