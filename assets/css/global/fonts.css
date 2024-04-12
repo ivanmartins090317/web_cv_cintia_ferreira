@@ -1,8 +1,30 @@
 /* Fontes */
 @font-face {
-  font-family: '';
+  font-family: 'KaiseiOpti-bold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../files/fonts/KaiseiOpti-bold.woff') format('woff');
 }
+@font-face {
+  font-family: 'Poppins-bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/Poppins-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins-regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/Poppins-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/Poppins-SemiBold.woff') format('woff');
+}
+
