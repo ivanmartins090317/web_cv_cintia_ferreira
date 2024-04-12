@@ -1,34 +1,75 @@
-section.apresentacao{
-  width:100%;
-  height:100dvh;
+section.apresentacao {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  margin-top:60px;
 }
-
-section.apresentacao .texto{
-  width:50%;
-  max-width:50%;
-  padding:120px 80px;
-  border:1px solid #333;
-  font-family:var(--titleH1);
+/* Parte do texto */
+section.apresentacao .texto {
+  width: 50%;
+  max-width: 50%;
+  padding: 120px 80px;
+  font-family: var(--titleH1);
+  margin-top: -50px;
 }
-section.apresentacao .texto .bola-roxa{
-  width:120px;
-  margin-bottom:5%
+section.apresentacao .texto .bola-roxa {
+  width: 120px;
+  margin-bottom: 5%;
 }
-section.apresentacao .texto .subTitulo{
-  font-size: clamp(20px, 5vw, 40px)
+section.apresentacao .texto .subTitulo {
+  font-size: clamp(20px, 5vw, 40px);
 }
-section.apresentacao .texto .titulo{
-  font-size: clamp(30px, 5vw, 72px)
+section.apresentacao .texto .titulo {
+  font-size: clamp(30px, 5vw, 72px);
 }
-section.apresentacao .texto .titulo span{
+section.apresentacao .texto .titulo span {
   color: var(--cor-roxa);
 }
-section.apresentacao .texto .paragrafo{
-  width:94%;
-  font-family:var(--paragraph);
-  color:var(--cor-secundaria);
+section.apresentacao .texto .paragrafo {
+  width: 93%;
+  font-family: var(--paragraph);
+  color: var(--cor-secundaria);
 }
-section.apresentacao .texto .onda{
-  width:100%;
-  margin-top:2%;
+section.apresentacao .texto .onda {
+  width: 100%;
+  margin-top: 2%;
 }
+/* icone mouse */
+section.apresentacao .imagem-mouse{
+  position: absolute;
+  top:100vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Parte da imagem-perfil */
+section.apresentacao .perfil {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Alinhar horizontalmente no centro */
+  align-items: start;
+}
+section.apresentacao .perfil .imagem-cintia {
+  position:relative;
+  max-width: 340px;
+  height: auto;
+  z-index: 2;
+  top:5%;
+}
+section.apresentacao .perfil .bola-rosa {
+  max-width:80px;
+  position: absolute;
+  top: 15%;
+  left: calc(50% - 213px);
+  z-index: 1;
+}
+section.apresentacao .perfil .rabisco {
+  max-width:150px;
+  position: absolute;
+  top: 40%;
+  right: calc(50% - 238px);
+   z-index: 1;
+}
+
+/* Secão ocupacao */
+
