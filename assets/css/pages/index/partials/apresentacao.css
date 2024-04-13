@@ -1,8 +1,9 @@
 section.apresentacao {
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   margin-top:60px;
+  /* position:relative; */
 }
 /* Parte do texto */
 section.apresentacao .texto {
@@ -72,4 +73,14 @@ section.apresentacao .perfil .rabisco {
 }
 
 /* Secão ocupacao */
-
+@media screen and (max-width: 960px){
+  section.apresentacao{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+  }
+  section.apresentacao .imagem-mouse{
+    top:140vh
+  }
+}

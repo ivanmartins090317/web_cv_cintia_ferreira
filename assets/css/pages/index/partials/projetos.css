@@ -1,0 +1,27 @@
+section.projetos-desenvolvidos {
+  width: 100%;
+  height: 100dvh;
+}
+section.projetos-desenvolvidos h2{
+  font-family:var(--title);
+  font-size:clamp(30px, 3vw, 55px);
+  text-align:center;
+  margin-top:10%;
+}
+section.projetos-desenvolvidos .container-imagens{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap:5%;
+  padding:100px;
+  place-items:center;
+}
+section.projetos-desenvolvidos .container-imagens h3{
+  font-family:var(--title);
+  font-size:clamp(16px, 2vw, 24px);
+}
+
+section.projetos-desenvolvidos .container-imagens .projeto a{
+  font-family: var(--paragraph);
+  font-size:clamp(14px, 1.5vw, 18px);
+  color: var(--cor-secundaria)
+}
