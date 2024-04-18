@@ -1,0 +1,41 @@
+section.competencias{
+  width: 100%;
+  min-height:100dvh;
+  text-align: center
+}
+
+section.competencias h2{
+ font-size:clamp(34px, 3vw, 56px);
+ font-family:var(--title);
+}
+section.competencias .nivel-competencias{
+  width:80%;
+  margin:0 auto;
+  display:flex;
+  gap:5%;
+  justify-content:center;
+  align-items:center;
+  padding:100px;
+  flex-wrap:wrap;
+}
+section.competencias .nivel-competencias .nivel .circulo {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  border-top-color: none; /* Torna a parte superior da borda transparente */
+  border-right-color: transparent;
+  border:5px solid var(--cor-roxa);
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
+  margin-top:15%;
+  /* transform: rotate(90deg); */
+} 
+section.competencias .nivel-competencias .nivel .circulo h3{
+ font-family:var(--title);
+ font-size:clamp(24px, 3vw, 48px);
+}
+section.competencias .nivel-competencias .nivel .circulo p{
+  font-family:var(--paragraph)
+}

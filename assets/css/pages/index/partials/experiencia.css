@@ -1,0 +1,102 @@
+section.experiencia {
+  width: 100%;
+  min-height: 100dvh;
+  padding:5% 0;
+}
+/* para todos h3 da seção */
+section.experiencia h3{
+  color:var(--cor-roxa)
+}
+
+/* texto de topo */
+section.experiencia .texto-top{
+  text-align: center;
+}
+section.experiencia .texto-top h3{
+  font-size:clamp(14px, 2vw, 18px);
+  font-family:var(--paragraph);
+  margin-bottom:1%;
+}
+section.experiencia .texto-top h2{
+  font-size:clamp(28px, 5vw, 56px);
+  font-family:var(--title)
+}
+section.experiencia .texto-top p{
+  font-size:clamp(12px, 2vw, 16px);
+  max-width:550px;
+  margin:1% auto;
+  font-family:var(--paragraph);
+  color:var(--cor-secundaria);
+}
+
+/* bloco de experiencias e linha de tempo */
+section.experiencia .descricao-experiencia{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:100px;
+}
+
+section.experiencia .descricao-experiencia .texto-direita,.texto-esquerda, .barra-central{
+  flex:1;
+  padding:10px;
+  text-align:right;
+}
+/* texto de experiacia */
+section.experiencia .descricao-experiencia .texto{
+  margin-bottom:16%
+}
+section.experiencia .descricao-experiencia .texto h2{
+  font-family:var(--title);
+  font-size: clamp(24px, 2vw, 32px);
+}
+section.experiencia .descricao-experiencia .texto p{
+  margin:3.86% 0;
+  font-size:clamp(12px, 2vw, 16px);
+  font-family:var(--paragraph);
+  color:var(--cor-secundaria)
+}
+section.experiencia .descricao-experiencia .texto h3{
+   font-family:var(--title);
+   font-size:clamp(16px, 2vw, 24px);
+   color:var(--cor-roxa);
+   margin-bottom:2%;
+}
+section.experiencia .descricao-experiencia .texto span{
+  font-family:var(--paragraph);
+  font-size:clamp(12px, 1.5vw, 14px);
+  color:var(--cor-secundaria)
+}
+
+/* barra central */
+section.experiencia .descricao-experiencia .barra-central{
+  display:grid;
+  place-items:center;
+  position:relative;
+}
+section.experiencia .descricao-experiencia .barra-central .barra{
+  width:1px;
+  height:400px;
+  background-color:var(--cor-roxa);
+ 
+}
+section.experiencia .descricao-experiencia .barra-central span{
+  max-width:10px;
+  max-height:10px;
+  padding:5px;
+  border-radius:50%;
+  border: 3px solid var(--cor-roxa);
+  position:absolute;
+}
+
+section.experiencia .descricao-experiencia .barra-central span:nth-child(2){
+  top:20%;
+}
+section.experiencia .descricao-experiencia .barra-central span:nth-child(3){
+  top:60%;
+}
+@media screen and( min-width:840px){
+  section.experiencia{
+    max-height:100dvh
+  }
+}

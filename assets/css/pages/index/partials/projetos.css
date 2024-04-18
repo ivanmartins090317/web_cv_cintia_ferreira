@@ -1,6 +1,7 @@
 section.projetos-desenvolvidos {
   width: 100%;
-  height: 100dvh;
+  min-height: 200dvh;
+  overflow: hidden;
 }
 section.projetos-desenvolvidos h2{
   font-family:var(--title);
@@ -24,4 +25,9 @@ section.projetos-desenvolvidos .container-imagens .projeto a{
   font-family: var(--paragraph);
   font-size:clamp(14px, 1.5vw, 18px);
   color: var(--cor-secundaria)
+}
+@media screen and( min-width:840px){
+  section.projetos-desenvolvidos{
+    min-height:100dvh
+  }
 }
