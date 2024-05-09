@@ -26,8 +26,25 @@ section.projetos-desenvolvidos .container-imagens .projeto a{
   font-size:clamp(14px, 1.5vw, 18px);
   color: var(--cor-secundaria)
 }
-@media screen and( min-width:840px){
+@media screen and (max-width: 960px){
   section.projetos-desenvolvidos{
     min-height:100dvh
+  }
+
+  section.projetos-desenvolvidos .container-imagens {
+    width:300%;
+    display: flex;
+    gap: 5%;
+    animation:slide 10s linear infinite forwards;
+    
+}
+section.projetos-desenvolvidos .container-imagens:hover{
+  animation-play-state: paused;
+}
+}
+
+@keyframes slide{
+  to{
+    transform:translate(calc(-100% + 600vw))
   }
 }

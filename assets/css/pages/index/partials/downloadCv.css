@@ -1,0 +1,73 @@
+section.donwload-cv{
+  width: 100%;
+  min-height:100dvh;
+}
+
+section.donwload-cv .container{
+  width: 100%;
+  max-height:500px;
+  background-color: var(--cor-roxa);
+  display: flex;
+  position:relative;
+}
+section.donwload-cv .container .texto{
+  width: 70%;
+  font-size:clamp(34px, 4vw, 70px);
+  color:var(--cor-branco);
+  font-family:var(--subTitle);
+
+  z-index:2;
+  position:absolute;
+  top:35%;
+  left:5%;
+  /* border:1px solid #fff; */
+ 
+}
+section.donwload-cv .container .texto span{
+ -webkit-text-stroke: 1px var(--cor-branco); /* Define uma borda ao redor do texto */
+  text-stroke: 1px black; /* Define uma borda ao redor do texto */ 
+ 
+  color: transparent;
+
+}
+section.donwload-cv .container div.background{ 
+  width: 100%;
+  min-height:500px;
+  background-size: cover;
+  background-position: center;
+  z-index:1;
+}
+section.donwload-cv .container button{
+  width: 200px;
+  height:75px;
+  padding:25px;
+  position:absolute;
+  top:35%;
+  right:0;
+  transform:translate(-50%, 50%);
+  z-index:2;
+  color:var(--cor-roxa);
+  font-family:var(--paragraph);
+}
+
+@media screen and (max-width:854px){
+  section.donwload-cv .container .texto{
+    width:70%;
+    top:5%;
+    padding:0 30px;
+  }
+  section.donwload-cv .container .texto span{
+ -webkit-text-stroke: initial;
+  text-stroke: initial; 
+  color:var(--cor-branco);
+  font-family:var(--title);
+}
+  section.donwload-cv{
+    min-height:80dvh;
+    
+  }
+  section.donwload-cv .container button{
+    top:73%;
+    right:10%
+  }
+}

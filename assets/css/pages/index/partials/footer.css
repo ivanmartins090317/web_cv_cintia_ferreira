@@ -1,0 +1,98 @@
+footer{
+  width:100%;
+  min-height:80dvh;
+  background-color:var(--cor-footer);
+  padding:0 100px;
+  overflow:hidden;
+}
+footer .container-texto-imagem{
+  display:flex;
+} 
+
+footer .container-texto-imagem .texto{
+  width:90%;
+  margin:3% 0;
+}
+footer .container-texto-imagem .texto h2{
+ font-size:clamp(34px , 5vw, 65px);
+ font-family:var(--title);
+ color:var(--cor-roxa);
+ margin-bottom:3%;
+}
+
+footer .container-texto-imagem .texto .contato h3{
+  font-family:var(--subTitle);
+  font-size:clamp(16px, 2vw, 32px);
+  color:var(--cor-roxa);
+  margin-bottom:2%;
+}
+footer .container-texto-imagem .texto .contato .icons a{
+  display:flex;
+  align-items:center;
+  gap:2%;
+  margin-bottom:2%;
+  font-family:var(--paragraph);
+  font-size:clamp(14px, 1.5vw, 18px);
+  color:#111
+}
+footer .container-texto-imagem .texto .contato .icons a img{
+ color:var(--cor-roxa);
+}
+
+/* imagem-bola-rosa e rabisco-verde */
+footer .container-texto-imagem .image-footer{
+  position:relative;
+  right:-20%; 
+}
+footer .container-texto-imagem .image-footer .bola-rosa{
+ max-width:100px;
+ max-height:100px;
+}
+footer .container-texto-imagem .image-footer .rabisco-verde{
+width:350px;
+max-width:350px;
+position:absolute;
+top:10%;
+right:-550%; 
+}
+
+/* social media central */
+footer .social-media{
+  width:100%;
+  max-height:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:5%;
+}
+footer .social-media  a img.linkdin{
+ width:50px;
+}
+footer .social-media  a img.instagram{
+  width:25px
+}
+footer .social-media a img{
+ width:35px;
+ height:auto;
+}
+
+@media screen and (max-width:790px){
+  footer{
+   padding:0 50px;
+  }
+  footer .container-texto-imagem .texto .contato h3{
+    margin-top:15%
+  }
+  footer .container-texto-imagem .texto{
+    z-index:10;
+    margin:25% 0 15%;
+  }
+  footer .container-texto-imagem .image-footer {
+   z-index:0;
+   right:-100px;
+  }
+  footer .social-media {
+     position:relative;
+     z-index:30;
+  }
+}

@@ -1,14 +1,15 @@
 section.apresentacao {
   width: 100%;
-  min-height: 100dvh;
+  height:auto;
   display: flex;
   margin-top:60px;
-  /* position:relative; */
+  position:relative;
+  margin-bottom:10%;
 }
 /* Parte do texto */
 section.apresentacao .texto {
   width: 50%;
-  max-width: 50%;
+  width: 50%;
   padding: 120px 80px;
   font-family: var(--titleH1);
   margin-top: -50px;
@@ -38,7 +39,7 @@ section.apresentacao .texto .onda {
 /* icone mouse */
 section.apresentacao .imagem-mouse{
   position: absolute;
-  top:100vh;
+  top:100%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -67,20 +68,68 @@ section.apresentacao .perfil .bola-rosa {
 section.apresentacao .perfil .rabisco {
   max-width:150px;
   position: absolute;
-  top: 40%;
+  top: 32%;
   right: calc(50% - 238px);
    z-index: 1;
 }
 
-/* Secão ocupacao */
+/* Responsividade Secão ocupacao */
+@media screen and (min-width: 1600px){
+ /* criar media de 1600px se nescessario */
+}
 @media screen and (max-width: 960px){
-  section.apresentacao{
+    section.apresentacao{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center
+    text-align: center;
   }
-  section.apresentacao .imagem-mouse{
-    top:140vh
+  section.apresentacao .perfil{
+    order: 1;
+    width: 62%; 
   }
+  section.apresentacao .texto{
+            order: 2;
+        width: 100%;
+        padding: 0 10%;
+        text-align: left;
+        margin-top: 10%;
+  }
+  section.apresentacao .texto .bola-roxa {
+    width: 25%;
+    margin-bottom: 5%;
+    display:none;
 }
+section.apresentacao .paragrafo {position:relative;}
+
+  /* perfil imagen cintia e elementos */
+  section.apresentacao .perfil .imagem-cintia {
+    position: relative;
+    width: 42%;
+    z-index: 2;
+    top: 5%;
+}
+section.apresentacao .perfil .bola-rosa {
+    width: 14%;
+    position: absolute;
+    top: 15%;
+    left: 23%;
+}
+section.apresentacao .perfil .rabisco {
+    width: 31%;
+    position: absolute;
+    top: 45%;
+    left: 54%;
+}
+section.apresentacao .bola-roxa{}
+  section.apresentacao .imagem-mouse{
+    order: 3;
+    position: relative;
+    margin: 13% auto;
+    top: 0%;
+    left: 9%;
+    }
+  
+}
+
+

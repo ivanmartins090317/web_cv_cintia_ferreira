@@ -17,7 +17,7 @@ section.ocupacao .container-box{
 }
 section.ocupacao .container-box .card{
   flex:1 1 300px;
-  max-width:300px;
+  width:300px;
   height:260px;
   padding:20px;
   border-radius:25px;
@@ -56,4 +56,20 @@ section.ocupacao  .tempo-experiecia .numero h2{
 
 section.ocupacao  .tempo-experiecia .numero{
   font-family:var(--paragraph);
+}
+
+@media screen and (max-width: 960px){
+   /* section.ocupacao .container-box {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 34%;
+    animation:slide 30s linear infinite forwards;
+} */
+
+}
+
+@keyframes slide{
+  to{
+    transform:translate(calc(-100% + 100vw))
+  }
 }

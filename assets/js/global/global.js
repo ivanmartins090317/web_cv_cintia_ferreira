@@ -10,3 +10,8 @@
   desativarDragDrop()
 
 }())
+
+
+const apresentacao = document.querySelector('.apresentacao')
+
+console.log(apresentacao.children);

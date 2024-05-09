@@ -1,7 +1,7 @@
 section.experiencia {
   width: 100%;
-  min-height: 100dvh;
-  padding:5% 0;
+  height: auto;
+  padding:5%;
 }
 /* para todos h3 da seção */
 section.experiencia h3{
@@ -13,7 +13,7 @@ section.experiencia .texto-top{
   text-align: center;
 }
 section.experiencia .texto-top h3{
-  font-size:clamp(14px, 2vw, 18px);
+   font-size:clamp(15px, 2.5vw, 18px);
   font-family:var(--paragraph);
   margin-bottom:1%;
 }
@@ -22,7 +22,7 @@ section.experiencia .texto-top h2{
   font-family:var(--title)
 }
 section.experiencia .texto-top p{
-  font-size:clamp(12px, 2vw, 16px);
+  font-size:clamp(15px, 2.5vw, 18px);
   max-width:550px;
   margin:1% auto;
   font-family:var(--paragraph);
@@ -52,9 +52,9 @@ section.experiencia .descricao-experiencia .texto h2{
 }
 section.experiencia .descricao-experiencia .texto p{
   margin:3.86% 0;
-  font-size:clamp(12px, 2vw, 16px);
+  font-size:clamp(15px, 2.5vw, 16px);
   font-family:var(--paragraph);
-  color:var(--cor-secundaria)
+  color:var(--cor-secundaria);
 }
 section.experiencia .descricao-experiencia .texto h3{
    font-family:var(--title);
@@ -97,6 +97,12 @@ section.experiencia .descricao-experiencia .barra-central span:nth-child(3){
 }
 @media screen and( min-width:840px){
   section.experiencia{
-    max-height:100dvh
+    height:90dvh;
+    padding:0;
+    border:1px solid #111;
+  }
+  section.experiencia .descricao-experiencia{
+   padding:0px;
+   
   }
 }

@@ -1,12 +1,15 @@
 section.competencias{
   width: 100%;
-  min-height:100dvh;
+  height:auto;
   text-align: center
 }
 
 section.competencias h2{
  font-size:clamp(34px, 3vw, 56px);
  font-family:var(--title);
+}
+section.competencias .nivel-competencias .plus-niveis{
+  display:none;
 }
 section.competencias .nivel-competencias{
   width:80%;
@@ -22,20 +25,77 @@ section.competencias .nivel-competencias .nivel .circulo {
   width: 150px; 
   height: 150px; 
   border-radius: 50%; 
-  border-top-color: none; /* Torna a parte superior da borda transparente */
-  border-right-color: transparent;
-  border:5px solid var(--cor-roxa);
+  border:8px solid var(--cor-roxa);
+  border-right-color: transparent; 
   display:flex;
   align-items: center;
   justify-content:center;
   flex-direction:column;
   margin-top:15%;
-  /* transform: rotate(90deg); */
 } 
 section.competencias .nivel-competencias .nivel .circulo h3{
  font-family:var(--title);
  font-size:clamp(24px, 3vw, 48px);
 }
 section.competencias .nivel-competencias .nivel .circulo p{
-  font-family:var(--paragraph)
+  font-family:var(--paragraph);
+  font-size:clamp(15px, 2.5vw, 18px)
+}
+
+@media screen and (max-width:640px){
+/* Estrategia de sobra na borda */
+ section.competencias{
+  position:relative;
+  overflow:hidden;
+ }
+ section.competencias:before,
+ section.competencias:after {
+  position:absolute;
+  content:"";
+ 
+  width:100px;
+  height:100%;
+  z-index:2;
+ }
+ /* sombra na direita */
+  section.competencias:before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  /* sombra na esquerda */
+   section.competencias:after{
+  top:0;
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+
+  /* copia do elemento de circulo para aparecer somente abaixo de 640px */
+  section.competencias .nivel-competencias .plus-niveis{
+    display:flex;
+    gap:6%;
+    white-space: nowrap
+  }
+  /* animação de scroll lateral infinito */
+  section.competencias .nivel-competencias{
+    flex-direction: row;
+    width:500%;
+    flex-wrap: nowrap;
+    gap:4%;
+    
+    animation: slide 25s linear infinite;
+   }
+   section.competencias .nivel-competencias:hover{
+    animation-play-state: paused;
+   }
+   
+   section.competencias .nivel-competencias .nivel .circulo{
+    margin-top:5%;
+   
+   }
+}
+
+@keyframes slide{
+  to{
+    transform: translateX(-100%)
+  }
 }
