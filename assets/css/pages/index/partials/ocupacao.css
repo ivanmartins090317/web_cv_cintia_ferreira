@@ -65,6 +65,9 @@ section.ocupacao  .tempo-experiecia .numero{
     margin-left: 34%;
     animation:slide 30s linear infinite forwards;
 } */
+section.ocupacao .container-box .card h2{font-size:4vw}
+section.ocupacao .container-box .card p{font-size:3vw}
+section.ocupacao .tempo-experiecia .numero {width:5%;}
 
 }
 

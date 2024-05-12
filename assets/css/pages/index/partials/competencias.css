@@ -42,7 +42,7 @@ section.competencias .nivel-competencias .nivel .circulo p{
   font-size:clamp(15px, 2.5vw, 18px)
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width: 960px){
 /* Estrategia de sobra na borda */
  section.competencias{
   position:relative;
