@@ -28,14 +28,15 @@ section.projetos-desenvolvidos .container-imagens .projeto a{
 }
 @media screen and (max-width: 960px){
   section.projetos-desenvolvidos{
-    min-height:100dvh
+    min-height:100dvh;
+    background: #30303030;
   }
 
   section.projetos-desenvolvidos .container-imagens {
-    width:300%;
+    width:400%;
     display: flex;
-    gap: 5%;
-    animation:slide 10s linear infinite forwards;
+    gap: 1%;
+    animation:slide 25s linear infinite forwards;
     
 }
 section.projetos-desenvolvidos .container-imagens:hover{

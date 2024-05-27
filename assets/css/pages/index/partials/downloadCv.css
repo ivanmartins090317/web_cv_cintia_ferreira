@@ -1,6 +1,6 @@
 section.donwload-cv{
   width: 100%;
-  min-height:100dvh;
+  min-height:71dvh;
 }
 
 section.donwload-cv .container{
@@ -63,7 +63,7 @@ section.donwload-cv .container button{
   font-family:var(--title);
 }
   section.donwload-cv{
-    min-height:80dvh;
+    min-height:57vh;
     
   }
   section.donwload-cv .container button{

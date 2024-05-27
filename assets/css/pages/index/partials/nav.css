@@ -28,9 +28,11 @@ nav .container-nav a img {
   max-width: 150px;
   transform:translateY(25%)
 }
+
 nav .mobile{
   display:none;
 }
+
 
 @media screen and (max-width: 550px) {
 
@@ -69,5 +71,34 @@ nav .mobile .barra.um{
 }
 nav .mobile .barra.dois{
   width:25px;
+}
+.container-button{
+  position: absolute;
+  right: 0px;
+  margin: 1%;
+}
+.container-button:hover{
+  width: 69px;
+  height: 49px;
+  border-radius: 10px;
+  border: 1px solid #3333;
+  position: absolute;
+  right: 0px;
+  margin: 1%;
+
+}
+
+.mobile.ativo .um {
+  transform: rotate(45deg) translate(5px, 5px);
+  top:16px;
+  width:25px;
+}
+
+.mobile.ativo .dois {
+  transform: rotate(-45deg) translate(2px, -2px);
+  
+}
+.none{
+  display:none;
 }
 }

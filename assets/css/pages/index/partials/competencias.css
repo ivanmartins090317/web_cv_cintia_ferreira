@@ -8,9 +8,7 @@ section.competencias h2{
  font-size:clamp(34px, 3vw, 56px);
  font-family:var(--title);
 }
-section.competencias .nivel-competencias .plus-niveis{
-  display:none;
-}
+
 section.competencias .nivel-competencias{
   width:80%;
   margin:0 auto;
@@ -20,6 +18,8 @@ section.competencias .nivel-competencias{
   align-items:center;
   padding:100px;
   flex-wrap:wrap;
+  position:relative;
+
 }
 section.competencias .nivel-competencias .nivel .circulo {
   width: 150px; 
@@ -33,16 +33,144 @@ section.competencias .nivel-competencias .nivel .circulo {
   flex-direction:column;
   margin-top:15%;
 } 
-section.competencias .nivel-competencias .nivel .circulo h3{
- font-family:var(--title);
- font-size:clamp(24px, 3vw, 48px);
+
+circle{
+  stroke:var(--cor-roxa);
+  stroke-width:10;
+  stroke-dasharray:0;
+  stroke-dashoffset:0;
+  fill:white;
+  
 }
-section.competencias .nivel-competencias .nivel .circulo p{
+circle.visible{
+  animation: desloc-90 2s linear forwards;
+}
+.nivel-competencias .nivel:nth-child(4) circle.visible{
+  animation: desloc-80 2s linear forwards;
+}
+.nivel-competencias .nivel:nth-child(5) circle.visible{
+  animation: desloc-95 2s linear forwards;
+}
+
+section.competencias .nivel-competencias .nivel h3{
+ font-family:var(--title);
+ font-size:clamp(24px, 3vw, 30px);
+}
+section.competencias .nivel-competencias .nivel p{
   font-family:var(--paragraph);
-  font-size:clamp(15px, 2.5vw, 18px)
+  font-size:clamp(15px, 2.5vw, 16px)
+}
+ div .plus-niveis{
+  display:none;
+}
+/* posicionamento de texto dentro dos circulos */
+.nivel{
+  position:relative;
+  margin-bottom:3%
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(1) h3{
+  position:absolute;
+  top: 31%;
+  left: 31%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(1) p{
+  position:absolute;
+  top: 49%;
+  left: 33%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(2) h3{
+  position:absolute;
+  top: 31%;
+  left: 31.5%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(2) p{
+  position:absolute;
+  top: 49%;
+  left: 43%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(3) h3{
+  position:absolute;
+  top: 31%;
+  left: 31%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(3) p{
+   position:absolute;
+  top: 49%;
+  left: 23%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(4) h3{
+  position:absolute;
+  top: 31%;
+  left:33.4%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(4) p{
+   position:absolute;
+  top: 49%;
+  left:34.4%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(5) h3{
+  position:absolute;
+  top: 31%;
+  left: 31%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(5) p{
+   position:absolute;
+  top: 49%;
+    left: 33%;
+    width: 9%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(5) h3{
+  position:absolute;
+  top: 30%;
+  left: 31%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(5) p{
+  position:absolute;
+  top: 49%;
+  left: 30%;
+  width: 9%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(6) h3{
+  position:absolute;
+  top: 29%;
+  left:31%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(6) p{
+   position:absolute;
+  top: 50%;
+  left: 27%;
+}
+
+
+
+@keyframes desloc-80{
+  to{
+       stroke-dasharray: 200;
+  }
+}
+@keyframes desloc-90{
+  to{
+       stroke-dasharray: 220;
+  }
+}
+@keyframes desloc-95{
+  to{
+       stroke-dasharray: 230;
+  }
 }
 
 @media screen and (max-width: 960px){
+section.competencias h2 {
+    margin-left: 10vw;
+}
 /* Estrategia de sobra na borda */
  section.competencias{
   position:relative;
@@ -70,17 +198,21 @@ section.competencias .nivel-competencias .nivel .circulo p{
   }
 
   /* copia do elemento de circulo para aparecer somente abaixo de 640px */
+
   section.competencias .nivel-competencias .plus-niveis{
-    display:flex;
-    gap:6%;
-    white-space: nowrap
-  }
+      display: flex;
+      align-items: center;
+      gap: 18%;
+      margin-top:-2%
+    }
+  
   /* animação de scroll lateral infinito */
   section.competencias .nivel-competencias{
     flex-direction: row;
-    width:500%;
+    width:300%;
     flex-wrap: nowrap;
     gap:4%;
+    margin-left:-53%;
     
     animation: slide 25s linear infinite;
    }
@@ -92,10 +224,99 @@ section.competencias .nivel-competencias .nivel .circulo p{
     margin-top:5%;
    
    }
+
+.nivel{
+  position:relative;
+  margin-bottom:3%
 }
+
+/* section.competencias .nivel-competencias .nivel .plus-niveis:nth-child(7) h3{
+  position:absolute;
+  top: 31%;
+  left: 31%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(7) p{
+  position:absolute;
+  top: 49%;
+  left: 33%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(8) h3{
+  position:absolute;
+  top: 31%;
+  left: 31.5%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(8) p{
+  position:absolute;
+  top: 49%;
+  left: 43%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(9) h3{
+  position:absolute;
+  top: 31%;
+  left: 31%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(9) p{
+   position:absolute;
+  top: 49%;
+  left: 30%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(10) h3{
+  position:absolute;
+  top: 31%;
+  left:31.4%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(10) p{
+   position:absolute;
+  top: 55%;
+  left:38.4%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(11) h3{
+  position:absolute;
+  top: 31%;
+  left: 31%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(11) p{
+   position:absolute;
+  top: 49%;
+    left: 33%;
+    width: 9%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(12) h3{
+  position:absolute;
+  top: 30%;
+  left: 33%;
+}
+section.competencias .nivel-competencias .nivel:nth-child(12) p{
+   position:absolute;
+  top: 49%;
+    left: 22%;
+    width: 9%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(13) h3{
+  position:absolute;
+  top: 29%;
+  left:31%;
+}
+
+section.competencias .nivel-competencias .nivel:nth-child(13) p{
+   position:absolute;
+  top: 50%;
+  left: 23%;
+}
+ */
+
+
+
 
 @keyframes slide{
   to{
     transform: translateX(-100%)
   }
+}
 }
