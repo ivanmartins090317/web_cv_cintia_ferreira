@@ -167,7 +167,7 @@ section.competencias .nivel-competencias .nivel:nth-child(6) p{
   }
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1100px){
 section.competencias h2 {
     margin-left: 10vw;
 }
@@ -197,23 +197,16 @@ section.competencias h2 {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
   }
 
-  /* copia do elemento de circulo para aparecer somente abaixo de 640px */
-
-  section.competencias .nivel-competencias .plus-niveis{
-      display: flex;
-      align-items: center;
-      gap: 18%;
-      margin-top:-2%
-    }
-  
+ 
   /* animação de scroll lateral infinito */
   section.competencias .nivel-competencias{
     flex-direction: row;
-    width:300%;
+    width:239%;
     flex-wrap: nowrap;
     gap:4%;
-    margin-left:-53%;
-    
+    justify-content: flex-start;
+    padding: 97px 50px;
+
     animation: slide 25s linear infinite;
    }
    section.competencias .nivel-competencias:hover{
@@ -224,11 +217,22 @@ section.competencias h2 {
     margin-top:5%;
    
    }
+   
+ /* copia do elemento de circulo para aparecer somente abaixo de 640px */
 
-.nivel{
+  section.competencias .nivel-competencias .plus-niveis{
+      display: flex;
+      align-items: center;
+      gap: 4%;
+      padding: 0;
+      width: 186%;
+      padding-right: 16%;
+    }
+  
+/* .nivel{
   position:relative;
   margin-bottom:3%
-}
+} */
 
 /* section.competencias .nivel-competencias .nivel .plus-niveis:nth-child(7) h3{
   position:absolute;
@@ -315,8 +319,13 @@ section.competencias .nivel-competencias .nivel:nth-child(13) p{
 
 
 @keyframes slide{
+  from{
+    transform: translateX(0)
+  }
   to{
     transform: translateX(-100%)
   }
 }
+
+
 }
