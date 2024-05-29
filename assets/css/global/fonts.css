@@ -4,7 +4,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('../files/fonts/KaiseiOpti-bold.woff') format('woff');
+  src: url('../../files/fonts/KaiseiOpti-bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Poppins-bold';

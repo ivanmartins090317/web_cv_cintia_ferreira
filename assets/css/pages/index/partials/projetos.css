@@ -42,7 +42,7 @@ section.projetos-desenvolvidos .container-imagens .projeto a{
 section.projetos-desenvolvidos .container-imagens:hover{
   animation-play-state: paused;
 }
-}
+
 
 @keyframes slide{
   to{

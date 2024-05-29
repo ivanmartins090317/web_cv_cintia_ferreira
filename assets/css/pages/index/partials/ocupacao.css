@@ -65,7 +65,7 @@ section.ocupacao  .tempo-experiecia .numero{
 }
 section.ocupacao .container-box .card{
   min-width:80%;
-  height:auto;
+  flex: 1 1 141px;
 }
 section.ocupacao .container-box .card h2{font-size:4vw}
 section.ocupacao .container-box .card p{font-size:3vw}
