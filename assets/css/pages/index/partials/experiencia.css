@@ -35,12 +35,13 @@ section.experiencia .descricao-experiencia{
   align-items:center;
   justify-content:center;
   padding:100px;
+  margin-top:-31%
 }
 
 section.experiencia .descricao-experiencia .texto-direita,.texto-esquerda, .barra-central{
   flex:1;
   padding:10px;
-  text-align:right;
+  /* text-align:right; */
 }
 /* texto de experiacia */
 section.experiencia .descricao-experiencia .texto{
@@ -67,7 +68,10 @@ section.experiencia .descricao-experiencia .texto span{
   font-size:clamp(12px, 1.5vw, 14px);
   color:var(--cor-secundaria)
 }
-
+/* texto a diretira */
+.descricao-experiencia .texto-direita{
+  text-align:right;
+}
 /* barra central */
 section.experiencia .descricao-experiencia .barra-central{
   display:grid;
@@ -94,6 +98,11 @@ section.experiencia .descricao-experiencia .barra-central span:nth-child(2){
 }
 section.experiencia .descricao-experiencia .barra-central span:nth-child(3){
   top:60%;
+}
+/* texto a esquerda */
+.descricao-experiencia .texto-esquerda {
+  margin-top:36%;
+  text-align:left;
 }
 @media screen and( min-width:840px){
   section.experiencia{

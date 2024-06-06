@@ -23,6 +23,7 @@ section.apresentacao .texto .subTitulo {
 }
 section.apresentacao .texto .titulo {
   font-size: clamp(30px, 5vw, 72px);
+  margin:2vw auto;
 }
 section.apresentacao .texto .titulo span {
   color: var(--cor-roxa);
@@ -42,6 +43,10 @@ section.apresentacao .imagem-mouse{
   top:100%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+section.apresentacao .imagem-mouse img:hover{
+  background:red;
+  animation:rotateImg 2s ease-in-out infinite;
 }
 /* Parte da imagem-perfil */
 section.apresentacao .perfil {
@@ -72,7 +77,17 @@ section.apresentacao .perfil .rabisco {
   right: calc(50% - 238px);
    z-index: 1;
 }
+@keyframes rotateImg{
+ 25%{
+    transform: rotate(45deg)
+  }
+  
+ 
+  100%{
+        transform: rotate(0deg)
 
+  }
+}
 /* Responsividade Secão ocupacao */
 @media screen and (min-width: 1600px){
  /* criar media de 1600px se nescessario */
@@ -91,9 +106,9 @@ section.apresentacao .perfil .rabisco {
   }
   section.apresentacao .texto{
             order: 2;
-        width: 100%;
+        width: 106%;
         padding: 0 10%;
-        text-align: left;
+        text-align: center;
         margin-top: 10%;
   }
   section.apresentacao .texto .bola-roxa {
