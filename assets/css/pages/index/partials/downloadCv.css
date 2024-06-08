@@ -58,6 +58,7 @@ section.donwload-cv .container button{
   section.donwload-cv .container .texto{
     width:91%;
     top:19%; 
+    text-align:center;
   }
   section.donwload-cv .container .texto span{
  -webkit-text-stroke: initial;
