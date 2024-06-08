@@ -47,6 +47,12 @@ nav .mobile{
   flex-direction: column;
   position: relative;
 }
+nav .mobile-nav{
+  animation: entrance 2s linear forwards;
+}
+nav .mobile-nav.none{
+  animation-direction: reverse;
+}
 nav .mobile-nav .logo{
   margin:0 25%;
 }
@@ -92,13 +98,24 @@ nav .mobile .barra.dois{
   transform: rotate(45deg) translate(5px, 5px);
   top:16px;
   width:25px;
+  transition: 2s ease;
 }
 
 .mobile.ativo .dois {
   transform: rotate(-45deg) translate(2px, -2px);
-  
+   transition: 2s ease;
 }
 .none{
   display:none;
+}
+@keyframes entrance{
+  from{
+    transform: translateY(-100%);
+    opacity: 0
+  }
+  to{
+    transform: translateY(0%);
+    opacity:1;
+  }
 }
 }
