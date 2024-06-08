@@ -1,17 +1,17 @@
-/* Fontes */
+
 @font-face {
   font-family: 'KaiseiOpti-bold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('../../files/fonts/KaiseiOpti-bold.woff') format('woff');
+  src: url('../../files/fonts/KaiseiOpti-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Poppins-bold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('../../files/fonts/Poppins-bold.woff') format('woff');
+  src: url('../../files/fonts/Poppins-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Poppins-regular';
@@ -28,3 +28,5 @@
   src: url('../../files/fonts/Poppins-SemiBold.woff') format('woff');
 }
 
+
+/* @import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
