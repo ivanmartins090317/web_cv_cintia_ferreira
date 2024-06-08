@@ -106,10 +106,13 @@ section.apresentacao .perfil .rabisco {
   section.apresentacao .texto{
     order: 2;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 7%;
     text-align: center;
     margin-top: 10%;
   }
+   section.apresentacao .texto .paragrafo{
+    line-height:6vw;
+   }
   section.apresentacao .texto .bola-roxa {
     width: 25%;
     margin-bottom: 5%;
@@ -142,7 +145,7 @@ section.apresentacao .bola-roxa{}
     position: relative;
     margin: 13% auto;
     top: 0%;
-    left: 4%;
+    left: 7%;
     }
   
 }

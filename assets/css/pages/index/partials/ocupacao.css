@@ -63,16 +63,26 @@ section.ocupacao  .tempo-experiecia .numero{
    section.ocupacao .container-box {
    flex-direction:column;
    padding:0 16%;
+   margin-bottom:8%;
 }
 section.ocupacao .container-box .card{
-  min-width:80%;
-  flex: 1 1 141px;
+  width:91%;
+  flex: 1 1;
 }
-section.ocupacao .container-box .card h2{font-size:4vw}
-section.ocupacao .container-box .card p{font-size:3vw}
-section.ocupacao .tempo-experiecia .numero {width:5%;}
+section.ocupacao .container-box .card h2{
+  font-size:4vw
+}
+section.ocupacao .container-box .card p{
+  font-size:3vw
+}
+section.ocupacao .tempo-experiecia .numero {
+  width:5%;
+}
 
-section.ocupacao .tempo-experiecia { gap: 5rem;margin: 10% 6% 6% 0;}
+section.ocupacao .tempo-experiecia { 
+  gap: 6rem;
+  margin: 10% 6% 6% 0;
+}
 
 }
 

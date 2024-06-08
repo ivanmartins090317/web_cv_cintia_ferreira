@@ -56,9 +56,9 @@ section.donwload-cv .container button{
     opacity:0;
   }
   section.donwload-cv .container .texto{
-    width:90%;
+    width:91%;
     top:25%;
-    padding:0 30px;
+    font-size:8.5vw;
     text-align:center;
   }
   section.donwload-cv .container .texto span{
@@ -72,7 +72,7 @@ section.donwload-cv .container button{
     
   }
   section.donwload-cv .container button{
-    top:73%;
-    right:6%
+    top:67%;
+    left:51%;
   }
 }
