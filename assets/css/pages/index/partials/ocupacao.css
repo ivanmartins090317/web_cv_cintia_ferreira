@@ -62,6 +62,7 @@ section.ocupacao  .tempo-experiecia .numero{
 @media screen and (max-width: 1100px){
    section.ocupacao .container-box {
    flex-direction:column;
+   padding:0 16%;
 }
 section.ocupacao .container-box .card{
   min-width:80%;

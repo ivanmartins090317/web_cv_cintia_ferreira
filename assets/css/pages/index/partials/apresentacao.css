@@ -91,7 +91,7 @@ section.apresentacao .perfil .rabisco {
 @media screen and (min-width: 1600px){
  /* criar media de 1600px se nescessario */
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1100px){
     section.apresentacao{
     flex-direction: column;
     align-items: center;
@@ -104,11 +104,11 @@ section.apresentacao .perfil .rabisco {
     margin-top: 7%;
   }
   section.apresentacao .texto{
-            order: 2;
-        width: 106%;
-        padding: 0 10%;
-        text-align: center;
-        margin-top: 10%;
+    order: 2;
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+    margin-top: 10%;
   }
   section.apresentacao .texto .bola-roxa {
     width: 25%;
