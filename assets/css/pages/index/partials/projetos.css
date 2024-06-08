@@ -2,6 +2,8 @@ section.projetos-desenvolvidos {
   width: 100%;
   min-height: 200dvh;
   overflow: hidden;
+  background: #30303030;
+  padding-bottom:17%;
 }
 section.projetos-desenvolvidos h2{
   font-family:var(--title);
@@ -12,7 +14,7 @@ section.projetos-desenvolvidos h2{
 section.projetos-desenvolvidos .container-imagens{
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap:5%;
+  gap:8%;
   padding:100px;
   place-items:center;
 }

@@ -36,7 +36,7 @@ section.donwload-cv .container div.background{
   background-size: cover;
   background-position: center;
   z-index:1;
-  opacity: 0;
+  /* opacity: 0; */
 }
 section.donwload-cv .container button{
   width: 200px;
@@ -52,6 +52,9 @@ section.donwload-cv .container button{
 }
 
 @media screen and (max-width:854px){
+  section.donwload-cv .container div.background{
+    opacity:0;
+  }
   section.donwload-cv .container .texto{
     width:90%;
     top:25%;

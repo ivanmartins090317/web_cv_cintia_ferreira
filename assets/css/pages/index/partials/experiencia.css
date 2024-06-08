@@ -41,7 +41,7 @@ section.experiencia .descricao-experiencia{
 section.experiencia .descricao-experiencia .texto-direita,.texto-esquerda, .barra-central{
   flex:1;
   padding:10px;
-  /* text-align:right; */
+  margin-top:36%;
 }
 /* texto de experiacia */
 section.experiencia .descricao-experiencia .texto{
@@ -80,7 +80,7 @@ section.experiencia .descricao-experiencia .barra-central{
 }
 section.experiencia .descricao-experiencia .barra-central .barra{
   width:1px;
-  height:400px;
+  height:79vh;
   background-color:var(--cor-roxa);
  
 }
